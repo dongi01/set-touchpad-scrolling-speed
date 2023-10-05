@@ -7,9 +7,11 @@ To check if these programs are installed just type `xinput --verion` and `python
 
 ## How to modify the two finger scrolling speed with xinput commands
 If you want to try what speed works for you, simply follow this indication:
+
 1. Type `xinput list`, look for Touchpad and save its id.
 2. Type `sudo xinput list-props <your-touchpad-id>` and look for "libinput Scrolling Pixel Distance". The number to the right of it shows the scrolling speed: the higher the number, the lower the speed.
 3. To change this value, type `sudo xinput --set-prop <your-touchpad-id> "libinput Scrolling Pixel Distance" <your-value>`
+
 
 Unfortunately this change is not permanent, so I had fun writing this script! If you don't want to follow this tutorial you can still search the internet for another solution.
 
